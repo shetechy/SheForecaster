@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+<meta charset="UTF-8">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" href="css/master.css">
+
+
+<title>SheForecasted</title>
+</head>
+
+<body>
+
+   <h1>SheForecasted</h1>
+   <h2>SheForecasted <span style="color: aqua;"> European 7-Day</span> Forecast</h2>
+   <p>Please select a city you are traveling to:</p>
+
+            <!--add the api or code to add the multiple cities list to dropdown menu-->
+    <div class="section-description">
+                <p class="section-subheading"> </p>
+                <form id="query-form">
+                    <select name="citySelected" id="citySelected">
+                        <option disabled selected value> -- select a city -- </option>
+                        <option value="{&quot;lat&quot;:&quot;52.367&quot;,&quot;lon&quot;:&quot;4.904&quot;}">Amsterdam, Netherlands</option>
+                        <option value="{&quot;lat&quot;:&quot;39.933&quot;,&quot;lon&quot;:&quot;32.859&quot;}">Ankara, Turkey</option>
+                        <option value="{&quot;lat&quot;:&quot;56.134&quot;,&quot;lon&quot;:&quot;12.945&quot;}">Åstorp, Sweden</option>
+                        <option value="{&quot;lat&quot;:&quot;37.983&quot;,&quot;lon&quot;:&quot;23.727&quot;}">Athens, Greece</option>
+                        <option value="{&quot;lat&quot;:&quot;54.597&quot;,&quot;lon&quot;:&quot;-5.930&quot;}">Belfast, Northern Ireland, UK</option>
+                        <option value="{&quot;lat&quot;:&quot;41.387&quot;,&quot;lon&quot;:&quot;2.168&quot;}">Barcelona, Spain</option>
+                        <option value='{"lat": "52.52", "lon": "13.405"}'>Berlin, Germany</option>
+                        <option value='{"lat": "40.4168", "lon": "-3.7038"}'>Madrid, Spain</option>
+                        <option value='{"lat": "48.8566", "lon": "2.3522"}'>Paris, France</option>
+                        <option value='{"lat": "41.9028", "lon": "12.4964"}'>Rome, Italy</option>
+                        <option value='{"lat": "48.2082", "lon": "16.3738"}'>Vienna, Austria</option>
+                        <option value='{"lat": "52.2297", "lon": "21.0122"}'>Warsaw, Poland</option>
+                        <option value='{"lat": "50.0755", "lon": "14.4378"}'>Prague, Czech Republic</option>
+                        <option value='{"lat": "50.8503", "lon": "4.3517"}'>Brussels, Belgium</option>
+                        <option value='{"lat": "59.3293", "lon": "18.0686"}'>Stockholm, Sweden</option>
+                        <option value='{"lat": "38.7229", "lon": "-9.1399"}'>Lisbon, Portugal</option>
+                        <option value='{"lat": "47.4979", "lon": "19.0402"}'>Budapest, Hungary</option>
+                        <option value='{"lat": "37.9838", "lon": "23.7275"}'>Athens, Greece</option>
+                        <option value='{"lat": "53.3331", "lon": "-6.2489"}'>Dublin, Ireland</option>
+                        <option value='{"lat": "59.9139", "lon": "10.7522"}'>Oslo, Norway</option>
+                        <option value='{"lat": "60.1699", "lon": "24.9384"}'>Helsinki, Finland</option>
+                        <option value='{"lat": "55.6761", "lon": "12.5683"}'>Copenhagen, Denmark</option>
+                        <option value='{"lat": "47.3769", "lon": "8.5417"}'>Zurich, Switzerland</option>
+                        <option value='{"lat": "48.1482", "lon": "17.1067"}'>Bratislava, Slovakia</option>
+                        <option value='{"lat": "46.0511", "lon": "14.5051"}'>Ljubljana, Slovenia</option>
+                        <option value='{"lat": "56.9496", "lon": "24.1059"}'>Riga, Latvia</option>
+                        <option value='{"lat": "59.437", "lon": "24.7535"}'>Tallinn, Estonia</option>
+                        <option value='{"lat": "54.6872", "lon": "25.2798"}'>Vilnius, Lithuania</option>
+                        <option value='{"lat": "42.6977", "lon": "23.3219"}'>Sofia, Bulgaria</option>
+                        <option value='{"lat": "44.8176", "lon": "20.4633"}'>Belgrade, Serbia</option>
+                        <option value='{"lat": "44.4268", "lon": "26.1025"}'>Bucharest, Romania</option>
+                        <option value='{"lat": "43.8486", "lon": "18.3564"}'>Sarajevo, Bosnia and Herzegovina</option>
+                        <option value='{"lat": "45.8150", "lon": "15.9819"}'>Zagreb, Croatia</option>
+                        <option value='{"lat": "42.4411", "lon": "19.2636"}'>Podgorica, Montenegro</option>
+                        <option value='{"lat": "42.6629", "lon": "21.1655"}'>Pristina, Kosovo</option>
+                        <option value='{"lat": "41.3275", "lon": "19.8189"}'>Tirana, Albania</option>
+                        <option value='{"lat": "53.9006", "lon": "27.5590"}'>Minsk, Belarus</option>
+                        <option value='{"lat": "47.0105", "lon": "28.8638"}'>Chisinau, Moldova</option>
+                        <option value='{"lat": "50.4501", "lon": "30.5234"}'>Kiev, Ukraine</option>
+                        <option value='{"lat": "49.8397", "lon": "24.0297"}'>Lviv, Ukraine</option>
+                        <option value='{"lat": "49.9935", "lon": "36.2304"}'>Kharkiv, Ukraine</option>
+                        <option value='{"lat": "59.9343", "lon": "30.3351"}'>Saint Petersburg, Russia</option>
+                        <option value='{"lat": "55.7558", "lon": "37.6176"}'>Moscow, Russia</option>
+                        <option value='{"lat": "41.0082", "lon": "28.9784"}'>Istanbul, Turkey</option>
+                        <option value='{"lat": "35.1856", "lon": "33.3823"}'>Nicosia, Cyprus</option>
+                        <option value='{"lat": "42.5078", "lon": "1.5211"}'>Andorra la Vella, Andorra</option>
+                        <option value='{"lat": "43.9333", "lon": "12.4500"}'>San Marino, San Marino</option>
+                        <option value='{"lat": "47.1415", "lon": "9.5215"}'>Vaduz, Liechtenstein</option>
+                        <option value='{"lat": "43.7333", "lon": "7.4167"}'>Monaco, Monaco</option>
+
+
+                    </select>
+                </form>
+                <!-- Temperature Unit Switcher-->
+
+                <!--The href="javascript:void(0);" prevents the link from scrolling to the top when clicked.
+                    The toggleTemperatureUnit() function will be added to the script for switching. -->
+               <div id="temperature-toggle-container">
+                <p>
+                    Using&nbsp;
+                    <span id="temperature-unit">Celcius</span>
+                    .&nbsp;&nbsp;
+                    <a id="temperature-toggle" href="javascript:void(0);" onclick="toggleTemperatureUnit()">Switch to °F</a></a>
+                </p> 
+               </div>
+
+               <!-- Loading Indicator HTML -->
+                <div id="loading-indicator" class="loading-indicator" style="display: none;">
+                     <div class="spinner"></div>
+                    <p>Getting your SheForecast...</p>
+                </div>
+
+               <!-- Example of temp display-->
+
+               <div class="weather-info">
+                <p>Temperature: <span class="temperature-value">16 °C</span></p>
+               </div>
+                
+
+        <div class="section-subheading" id="get-results-heading"></div>
+        <div class="results-div" id="results">
+            <div id="weather-container" class="row">
+                <!-- Weather cards will be injected here by JavaScript-->
+                
+            </div>
+
+        </div>
+        
+     </div>
+     <footer>
+        <div class="section-divider"><img src="images/SheForecaster_blackicon-removebg-preview copy.png"></div>
+    
+        <code class="copyright-text">© Copyright 2024 SheTechy | All Rights Reserved </code>
+    </footer>
+
+</body>
+         <!--JQuery Scripts-->
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+         
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        
+        <!-- Our codes -->
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo
+        6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
